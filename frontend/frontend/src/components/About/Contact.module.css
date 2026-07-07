@@ -1,0 +1,352 @@
+.ContactContent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-top: 100px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.MapContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+
+.Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 80%;
+    align-items: center;
+}
+
+.locationIcon{
+    font-size: 30px;
+    color: #08C25E;
+    font-weight: bold;
+}
+
+.Title h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Map{
+    height: 100%;
+    width: 80%;
+}
+
+.mapIfram{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.ContactFormContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactTitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ContactTitle strong{
+    font-size: 16px;
+    color: #08C25E;
+}
+
+.ContactForm{
+    height: 80%;
+}
+
+.form{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.FullName{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.FullName label{
+    font-size: 15px;
+    color: #000000ab;
+    margin-bottom: 5px;
+}
+
+.FullName input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid #0000005e;
+    font-size: 15px;
+    color: #000000b2;
+    letter-spacing: 1px;
+}
+
+.FullName textarea{
+    height: 100px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: #000000b6;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 1px solid #00000088;
+    border-radius: 5px;
+    resize: none;
+}
+
+.FullName input::placeholder{
+    font-size: 14px;
+    color: #00000060;
+}
+
+.FullName textarea::placeholder{
+    font-size: 14px;
+    color: #00000060;
+}
+
+.contactButton {
+    width: 30%;
+    padding: 0.8em 1.5em;
+    border: none;
+    background-color: #08C25E;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 280px) and (max-width: 414px){
+    /* small phones size */
+    .ContactContent{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+
+    .MapContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ContactFormContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .Map{
+        height: 100%;
+        width: 96%;
+    }
+
+    .ContactForm{
+        height: 100%;
+    }
+
+    .Title{
+        width: 98%;
+    }
+
+    .form{
+        width: 98%;
+        height: 100%;
+    }
+
+    .contactButton {
+        width: 40%;
+        height: 7vh;
+        padding: 0;
+        border: none;
+        background-color: #08C25E;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px){
+    /* big phones size */
+    .ContactContent{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+
+    .MapContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ContactFormContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .Map{
+        height: 100%;
+        width: 98%;
+    }
+
+    .ContactForm{
+        height: 100%;
+        width: 90%;
+    }
+
+    .Title{
+        width: 98%;
+    }
+
+    .form{
+        width: 98%;
+        height: 100%;
+    }
+
+    .contactButton {
+        width: 40%;
+        height: 7vh;
+        padding: 0;
+        border: none;
+        background-color: #08C25E;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* tablet size */
+    .ContactContent{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+
+    .MapContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ContactFormContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .Map{
+        height: 100%;
+        width: 98%;
+    }
+
+    .ContactForm{
+        height: 100%;
+        width: 60%;
+    }
+
+    .Title{
+        width: 98%;
+    }
+
+    .form{
+        width: 98%;
+        height: 100%;
+    }
+
+    .contactButton {
+        width: 40%;
+        height: 7vh;
+        padding: 0;
+        border: none;
+        background-color: #08C25E;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .form label{
+        font-size: 20px;
+    }
+
+    .form input{
+        font-size: 20px;
+    }
+
+    .form input::placeholder{
+        font-size: 20px;
+    }
+
+    .form textarea::placeholder{
+        font-size: 20px;
+    }
+}

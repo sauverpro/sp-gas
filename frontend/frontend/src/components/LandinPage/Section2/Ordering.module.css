@@ -1,0 +1,142 @@
+.OrderingContent{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.header{
+    width: 100%;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.header h1 small{
+    color: #0000008a;
+    font-size: 14px;font-weight: lighter;
+}
+
+.GasesContainer{
+    width: 100%;
+    min-height: 100vh;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GasColumn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GasRow{
+    width: 88%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.GasCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px #00000036;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.GasBottle{
+    width: 50%;
+    height: 50%;
+}
+
+.GasBottle img{
+    width: 100%;
+    height: 100%;
+}
+
+.GasCard h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000b9;
+}
+
+.GasCard span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.GasCard span .h2{
+    font-size: 16px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h2 strong{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000b9;
+}
+
+.BuyButton{
+    margin-top: 10px;
+    width: 100%;
+    height: 5vh;
+    background-color: #08C25E;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottomSpace{
+    height: 25vh;
+    width: 100%;
+}
+
+
+
+/***************RESPONSIVENESS****************/
+@media screen and (min-width: 280px) and (max-width: 600px){
+    /* small phones size */
+    .GasRow{
+        width: 88%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+        gap: 50px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    /* tablet size */
+    .GasRow{
+        width: 88%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+        gap: 50px;
+    }
+}

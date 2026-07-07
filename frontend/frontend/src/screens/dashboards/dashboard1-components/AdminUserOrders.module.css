@@ -1,0 +1,257 @@
+.downn{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+
+.eye{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+ /* ===================  Details  ====================== */
+
+ .title{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 19px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+.left{
+    margin-top: 20px;
+}
+
+.leftTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93;
+    margin-bottom: 5px;
+}
+
+.leftName{
+    font-size: 15px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.rightTitlhe{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-top: 19px;
+}
+
+.rightTitlee{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.rightContent{
+    border-top: 2px solid #8E8E93;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+
+.rightContentt{
+    border-top: 2px solid #8E8E93;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+
+.price{
+    border: 2px solid #8E8E93;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+}
+
+.paid{
+    background-color: green;
+    border: 1px solid #8E8E93;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+  }
+  
+  .notPaid{
+    background-color: red;
+    border: 1px solid #8E8E93;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+  }
+
+
+  .evidenceText{
+    margin-top: 15px;
+  }
+
+  .proof{
+    position: absolute;
+    margin-top: 10px;
+    width: 11%;
+    height: 25%;
+  }
+
+.label{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.sendToStation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 180px;
+    height: 35px;
+    cursor: pointer;
+    background-color:#08C25E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+.sendIcn{
+ font-size: 25px;
+}
+.contain{
+    /* background-color: red; */
+    display: flex;
+    gap: 10px;
+}
+.returnButton{
+    display: none!important;
+}
+.retButton{
+    background-color: #08C25E;
+    border-radius: 50%;
+    display: flex;
+}
+
+.returnArrow{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width : 375px){
+    .main{
+        flex-direction: column;
+    }
+    .title{
+        margin-left: 2rem;
+    }
+    .contain{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    .returnButton{
+        display: flex!important;
+    }
+} 
+
+@media screen and  (max-width : 744px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .left{
+       margin-left: 30%;
+    }
+    .title{
+        margin-left: 2rem;
+    }
+    .contain{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    .returnButton{
+        display: flex!important;
+    }
+
+}

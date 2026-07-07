@@ -1,0 +1,390 @@
+.tableContainer{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableDescr{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableDescr h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+}
+.tableDescr p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89%;
+}
+
+.Card{
+    box-shadow: 0 2px 6px #0000001a;
+    max-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ifoto{
+    width: 50%;
+    height: 50%;
+}
+
+.Card span{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    text-transform: capitalize;
+}
+.CardRow1, .CardRow2, .CardRow3, .CardRow4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000ce;
+    font-size: 15px;
+    padding: 20px 0px;
+}
+
+.descri{
+    width: 20%; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+.CardRow1{
+    background-color: #909291;
+}
+.CardRow1 span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.CardRow3{
+    background-color: #d3d3d380;
+}
+
+.CardCon{
+    width: 50%;
+}
+.orderButton{
+    background-color: #08C25E;
+    height: 7vh;
+    width: 12vw;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.ShowHorizontalScrollIcons{
+    display: none;
+}
+
+/***************RESPONSIVENESS****************/
+@media screen and (min-width: 280px) and (max-width: 414px){
+    /* small phones size */
+    .tableContainer{
+        min-height: 80vh;
+    }
+
+    .tableDescr{
+        height: auto;
+    }
+
+    .tableDescr h1{
+        text-transform: capitalize;
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+    .tableDescr p{
+        font-size: 22px;
+        text-align: center;
+        font-weight: lighter;
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .CardRow1, .CardRow2, .CardRow3, .CardRow4{
+        font-size: 15px;
+        padding: 30px 0px;
+    }
+
+    .scroll{
+        height: auto;
+        width: 100%;
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+    }
+
+    .Card{
+        height: 100%;
+        width: 750px;
+    }
+
+
+    .orderButton{
+        background-color: #08C25E;
+        width: 200px;
+        height: 6vh;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .Card span{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        text-transform: capitalize;
+    }
+
+    .CardRow1, .CardRow2, .CardRow3, .CardRow4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000000ce;
+        font-size: 18px;
+    }
+
+    .ShowHorizontalScrollIcons{
+        display: flex;
+        flex-direction: row;
+        width: 180px;
+        height: 200px;
+        position: absolute;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Icon3{
+        font-size: 100px;
+        color: #00ff77;
+    }
+
+    .Icon2{
+        font-size: 80px;
+        color: #02ff78;
+    }
+
+    .Icon1{
+        font-size: 50px;
+        color: #00ff77;
+    }
+
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px){
+    /* big phones size */
+    .tableContainer{
+        min-height: 80vh;
+    }
+
+    .tableDescr{
+        height: auto;
+    }
+
+    .tableDescr h1{
+        text-transform: capitalize;
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+    .tableDescr p{
+        font-size: 22px;
+        text-align: center;
+        font-weight: lighter;
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .CardRow1, .CardRow2, .CardRow3, .CardRow4{
+        font-size: 15px;
+        padding: 20px 0px;
+    }
+
+    .scroll{
+        height: auto;
+        width: 100%;
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+    }
+
+    .Card{
+        height: 100%;
+        width: 850px;
+    }
+
+    .orderButton{
+        background-color: #08C25E;
+        width: 200px;
+        height: 6vh;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .Card span{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        text-transform: capitalize;
+    }
+
+    .CardRow1, .CardRow2, .CardRow3, .CardRow4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000000ce;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* tablet size */
+    .tableContainer{
+        min-height: 80vh;
+    }
+
+    .tableDescr{
+        height: auto;
+    }
+
+    .tableDescr h1{
+        text-transform: capitalize;
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+    .tableDescr p{
+        font-size: 22px;
+        text-align: center;
+        font-weight: lighter;
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .CardRow1, .CardRow2, .CardRow3, .CardRow4{
+        font-size: 15px;
+        padding: 20px 0px;
+    }
+
+    .scroll{
+        height: auto;
+        width: 100%;
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+    }
+
+    .Card{
+        height: 100%;
+        width: 1024px;
+    }
+
+    .orderButton{
+        background-color: #08C25E;
+        width: 200px;
+        height: 6vh;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .Card span{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        text-transform: capitalize;
+    }
+
+    .CardRow1, .CardRow2, .CardRow3, .CardRow4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000000ce;
+        font-size: 22px;
+    }
+
+}
