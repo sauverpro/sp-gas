@@ -1,0 +1,22 @@
+@media screen and (min-width : 375px) and (max-width: 475px) {
+    
+    .cardTaineer{
+        overflow-x: scroll;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    .cardTainer{
+        width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'DM Sans', sans-serif;
+    }
+}
+@media screen and (min-width : 475px) and (max-width: 675px){
+    
+}
+
+@media screen and (min-width : 675px) and (max-width: 875px){
+    
+}

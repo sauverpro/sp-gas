@@ -1,0 +1,171 @@
+.viewBuu{
+    border: none;
+    outline: none;
+    padding: 50px 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+}
+.viewBuCon{
+    width: 30px;
+    height: 30px;
+    color: #08C25E;
+}
+.viewBuCon:hover{
+    color: #08c25fce;
+    cursor: pointer;
+}
+.modalContainer{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+
+}
+.modContainer{
+    background-color: #FFFFFF;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 1px;
+    right: 3px;
+    box-shadow: -3px 2px 3px grey;
+    border-radius: 10px;
+}
+.srcollContainer{
+    overflow-y: auto;
+    padding: 0 5px;
+}
+.closeButContaine{
+    /* background-color: greenyellow; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.viewBuCloseCon{
+    width: 30px;
+    height: 30px;
+    color: #08C25E;
+}
+.viewBuCloseCon:hover{
+    color: red;
+}
+.orderTitle{
+    color: #08C25E;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.orderDetailCard{
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding:  10px;
+    margin: 0 0 10px 0;
+
+}
+.productImage{
+    /* background-color: aquamarine; */
+    width: 30%;
+    height: 100%;
+}
+.orderDetailCard:hover{
+    background-color: rgb(240, 240, 240);
+    user-select: none;
+}
+.orderDetailCard ul{
+    width: 50%;
+    list-style-type: none;
+}
+.orderDetailCard ul li, p{
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+.status{
+    width: 70%!important;
+    color: #08C25E;
+    display: flex;
+    flex-direction: row!important;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.statuscolor{
+    width: 70%!important;
+    color: rgb(196, 162, 11);
+    display: flex;
+    flex-direction: row!important;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.statuscolor1{
+    width: 70%!important;
+    color: rgb(196, 48, 11);
+    display: flex;
+    flex-direction: row!important;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+.orderDetailCard span{
+    width: 40%;
+}
+.orderDetailCard span h4{
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+/*********Order Modal Responsiveness*********/
+@media screen and (min-width: 280px) and (max-width: 936px) {
+
+    .modContainer{
+        width: 100%;
+        font-size: 12px;
+        /* color: #08C25E; */
+    }
+    .productImage{
+        /* background-color: aquamarine; */
+        width: 30%;
+        height: 100%;
+    }
+    .orderDetailCard ul{
+        /* background-color: aqua; */
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .modalContainer{
+        margin: 0 0 0 0;
+    }
+    .orderDetailCard span{
+        /* background-color: aqua; */
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .status{
+        display: flex;
+        flex-direction: row!important;
+        justify-content: center!important;
+        align-items: center!important;
+        gap: 2px;
+    }
+}

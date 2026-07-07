@@ -1,0 +1,29 @@
+.notification{
+    background-color: #08C25E;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+    margin-top: -1px;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.notify{
+    font-size: 35px;
+    color: blue;
+}
+
+.notiList{
+    margin: 5px 10px;
+    padding: 3% !important;
+    background-color: rgba(117, 106, 106, 0.164);
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+}
+

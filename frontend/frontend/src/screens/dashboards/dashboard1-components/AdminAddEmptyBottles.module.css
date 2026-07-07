@@ -1,0 +1,52 @@
+
+.back{
+    width: 74.4%;
+    margin-left: 15px;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.311);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid grey; 
+    position: relative;
+    width: 35%;
+}
+.icon{
+    color: #08C25E;
+    font-size: 20px;
+}
+
+.closeIcon{
+    color: #08C25E;
+    cursor: pointer;
+    height: 50%;
+    width: 10%;
+    margin-left: 30%;
+}
+
+.closeIcon :hover{
+    color: red;
+}
+
+@media screen and  (max-width : 744px){
+
+.back{
+    width: 85%;
+}
+
+.container{
+    width: 80%;
+}
+
+}

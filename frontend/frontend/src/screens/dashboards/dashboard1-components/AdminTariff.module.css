@@ -1,0 +1,458 @@
+.pContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Sans', sans-serif;
+   
+  }
+  .prix{
+    color: black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 700;
+  }
+  .editP{
+    cursor: pointer;
+   padding: 5px 20px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   background-color: blue;
+  }
+
+
+.tariffPagination{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+  }
+  .paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+
+
+.returnButton{
+    display: none;
+    width: 100%;
+}
+.retButton{
+    background-color: #08C25E;
+    border-radius: 50%;
+    display: flex;
+}
+.retButton:hover{
+    background-color: #099b4d;
+    padding: 0.5px;
+}
+
+.returnArrow{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+}
+
+.CircleLoader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 260px;
+    margin-top: 20px;
+   }
+
+/* =======================      Details    ======================= */
+
+.titllle{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+    text-transform: capitalize;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.left{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bottleImage{
+    width: 100%; 
+    height: 100%;  
+}
+
+
+.right{   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+.rightTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #8E8E93;
+}
+.rightContent{
+    border-top: none;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+.spanContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.spanIcon{
+    color: red;
+}
+
+.actionButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.link{
+    text-decoration: none;
+}
+
+.btnedit{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    
+}
+.btndelete{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.btnicon{
+    font-size: 15px;
+}
+
+/* =======================      edit tariff    ======================= */
+
+.adminEditContainer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.adminEditTitle{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    margin: 0 auto;
+    border-bottom: 2px solid lightgrey;
+}
+.adminEditIcon{
+    color: #08C25E;
+    width: 3%;
+    height: 3%;
+}
+.adminEditTitle h1{
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: grey;
+}
+.stationform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexField{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.flexFields{
+    width: 49%;
+}
+.editicon, .addIcon{
+    width: 2%;
+    height: 10%;
+    color: #08C25E;
+    margin-right: 10px;
+}
+.updateTariff{
+    color: #FFFFFF;
+}
+.retButton{
+    display: none;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width : 321px){
+    .main{
+        flex-direction: column;
+    }
+}
+
+@media screen and  (max-width : 744px){
+
+    .CircleLoader{
+        margin-left: -20px !important;
+        margin-right: 15px !important;
+        margin-top: 20px;
+        size: 5px!important;
+       }
+
+       .bottleImage{
+        width: 100%; 
+        height: 100%;  
+    }
+
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 475px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .tariffPagination{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton{
+        display: flex;
+        width: 100%;
+    }
+    .message{
+        width: 95%;
+    }
+    .editicon, .addIcon{
+        width: 8%;
+        height: 5%;
+        color: #08C25E;
+        margin-right: 10px;
+    }
+    .retButton{
+        display: flex;
+        margin-right: 10px;
+    }
+    .bottleImage{
+        width: 100%; 
+        height: 100%;  
+    }
+   
+}
+@media screen and (min-width: 476px) and (max-width: 675px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .tariffPagination{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton{
+        display: flex;
+        width: 100%;
+    }
+    .left{
+       margin-left: 30%;
+    }
+    .message{
+        width: 100%;
+    }
+    .editicon, .addIcon{
+        width: 8%;
+        height: 5%;
+        color: #08C25E;
+        margin-right: 10px;
+    }
+    .retButton{
+        display: flex;
+        margin-right: 10px;
+    }
+    .bottleImage{
+        width: 100%; 
+        height: 100%;  
+    }
+
+    
+}
+@media screen and (min-width: 676px) and (max-width: 875px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .tariffPagination{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton{
+        display: flex;
+        width: 100%;
+    }
+    .editicon, .addIcon{
+        width: 8%;
+        height: 5%;
+        color: #08C25E;
+        margin-right: 10px;
+    }
+    .retButton{
+        display: flex;
+        margin-right: 10px;
+    }
+    .bottleImage{
+        width: 100%; 
+        height: 100%;  
+    }
+}
+@media screen and (min-width: 876px) and (max-width: 1199px){
+    
+    .tariffPagination{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      
+      .message{
+        width: 48%;
+    }
+    .editicon, .addIcon{
+        width: 8%;
+        height: 5%;
+        color: #08C25E;
+        margin-right: 10px;
+    }
+    .returnButton{
+        display: flex;
+        width: 100%;
+    }
+    .retButton{
+        display: flex;
+        margin-right: 10px;
+    }
+    .bottleImage{
+        width: 100%; 
+        height: 100%;  
+    }
+}
+@media screen and (min-width: 1200px){
+    .tariffPagination{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton{
+        display: none;
+        width: 100%;
+    }
+      .message{
+        width: 48%;
+    }
+    .bottleImage{
+        width: 100%; 
+        height: 100%;  
+    }
+    
+}
+
+
+
+
+

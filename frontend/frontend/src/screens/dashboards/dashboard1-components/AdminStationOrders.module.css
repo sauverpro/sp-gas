@@ -1,0 +1,401 @@
+.downn{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 33%;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+/* AdminStationOrderDetail CSS*/
+
+.title{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+
+.left{
+    margin-top: 20px;
+}
+
+.leftTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93;
+    margin-bottom: 5px;
+}
+
+.leftName{
+    font-size: 15px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 10px;
+}
+.rightTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+}
+.rightContent{
+    border-top: 2px solid #8E8E93;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+.rightone{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    /* gap: 50px; */
+}
+.rightone button{
+    border: none;
+    outline: none;
+    background-color: #08C25E;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 5px; 
+}
+.rightone button:hover{
+    background-color: #26d477;
+    cursor: pointer;
+}
+
+.status{
+    margin-top: 30px;
+}
+
+.status span{
+    padding: 10px;
+    background-color: rgb(145, 131, 131);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+.message{
+    width: 100% !important;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.btnedit{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #08C25E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;  
+}
+
+.btndelete{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.btnicon{
+    font-size: 15px;
+}
+
+.returnButton{
+    display: none;
+    width: 100%;
+}
+
+.retButton{
+    background-color: #08C25E;
+    border-radius: 50%;
+    display: flex;
+}
+
+.retButton:hover{
+    background-color: #099b4d;
+    padding: 0.5px;
+}
+
+.returnArrow{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+}
+
+/***************Add Order Card****************/
+
+.middle{
+  
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+
+}
+.middleCard{
+    background-color: #FFFFFF;
+    width: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.middleCard span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+
+}
+.middleCard p{
+    margin-top: 5px;
+}
+.closeCard{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end!important;
+    border-bottom: none!important;
+    margin-bottom: 10px!important;
+}
+.closeIcon{
+    color: #26d477;
+    width: 30%;
+    height: 50%;
+}
+.closeIcon:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 475px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .downn{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton{
+        display: flex;
+        /* background-color: blue; */
+        width: 100%;
+    }
+    .message{
+        width: 95%;
+    }
+    .headcontainer{
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start!important;
+    }
+    .title{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titleContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .titleCon{
+        /* background-color: green; */
+        width: 510%;
+        display: flex;
+        gap: 10px;
+    }
+
+}
+@media screen and (min-width: 476px) and (max-width: 675px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .downn{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton, .retButton{
+        display: flex;
+        /* background-color: blue; */
+        width: 100%;
+    }
+    .left{
+       margin-left: 30%;
+    }
+    .message{
+        width: 100%;
+    }
+    .title{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titleContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 676px) and (max-width: 875px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .downn{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton, .retButton{
+        display: flex;
+        /* background-color: blue; */
+        width: 100%;
+    }
+}
+@media screen and (min-width: 876px) and (max-width: 1199px){
+    
+    .downn{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton{
+        display: flex;
+        width: 100%;
+    }
+      .message{
+        width: 48%;
+    }
+    .title{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titleContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px){
+    
+    .downn{
+        padding-top: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      .returnButton, .retButton{
+        display: none;
+        width: 100%;
+    }
+      .message{
+        width: 48%;
+    }
+    
+}
+
+
+
+
+

@@ -1,0 +1,254 @@
+.downn{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 33%; */
+    margin: 0 auto;
+  }
+  .paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+
+
+.eye{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/*** ===================  StationManagerExternalDetails  ====================== ***/
+
+.title{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+.left{
+    margin-top: 20px;
+}
+
+.leftTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93;
+    margin-bottom: 5px;
+}
+
+.leftName{
+    font-size: 15px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.rightTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.rightTitlee{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 80px;
+}
+
+
+.rightContent{
+    border-top: 2px solid #8E8E93;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+.payment{
+    margin-top: 30px;
+}
+.status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.status p, .approveButton{
+    color: White;
+    font-weight: 800;
+    background:#08C25E;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+.method{
+    border: 2px solid #08C25E !important;
+    background-color: #fff !important;
+    color: #08C25E !important;
+}
+.approveButton{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.approveCon{
+    width: 15%;
+    height: 1%;
+}
+.retContainer{
+    /* background-color: red;   */
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+
+/* ===================  StationManagerAddExternalOrder  ====================== */
+.header{
+    width: 100%;
+}
+.icon{
+    color: #08C25E;
+    font-size: 20px;
+}
+.stationform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.field{
+    width: 45%;
+}
+.buttonContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.buttonContainer button{
+    width: 40%;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.returnButton{
+    display: none!important;
+}
+.retButton{
+    background-color: #08C25E;
+    border-radius: 50%;
+    display: flex;
+}
+
+.returnArrow{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width : 375px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .approveButton{
+        width: 50%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .returnButton{
+        display: flex!important;
+        /* background-color: blue; */
+    }
+
+    .field{
+        width: 100%;
+    }
+
+} 
+
+@media screen and  (min-width : 744px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .left{
+       margin-left: 30%;
+    }
+    .approveButton{
+        width: 20%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .returnButton{
+        display: none!important;
+        /* background-color: blue; */
+    }
+    .field{
+        width: 45%;
+    }
+}
