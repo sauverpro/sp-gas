@@ -1,0 +1,30 @@
+.eContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.in{
+    border-radius: 5px;
+}
+
+.save{
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: none;
+    background-color: #08C25E;
+}
+
+@media only screen and (max-width: 416px) {
+
+.eContainer{
+    flex-direction: column;
+}
+
+}
