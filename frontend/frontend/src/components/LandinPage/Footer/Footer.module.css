@@ -1,0 +1,254 @@
+.FooterContent{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #0000003a;
+    margin-top: 100px;
+    background-color: #0000000a;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container1{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container2{
+    width: 88%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+
+.navBarSections{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 32px;
+}
+.logoText{
+    width: 10%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    height: 8vh;
+    width: auto;
+}
+.title3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.footSections h1{
+    text-transform: capitalize;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.footSections ul li{
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: 20px;
+    cursor: pointer;
+    list-style-type:square;
+}
+.footContacts h1{
+    text-transform: capitalize;
+    border-bottom: 1px solid grey; 
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+.footSpan{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.footSpan p{
+    padding-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footSpanSocial{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.footCons{
+    color: #08C25E;
+    width: 10%;
+    height: 20%;
+}
+.container2Privacy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.container2Privacy p{
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+.container2Privacy p:hover{
+    color: #08C25E;
+    cursor: pointer;
+}
+.container2Privacy .par3{
+    padding: 0 5px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.copyright{
+    display: flex;
+    text-transform: capitalize;
+}
+
+.copyright a{
+    text-decoration: none;
+}
+
+.copyCon{
+    margin: 0 5px;
+}
+
+.copyright p{
+    color: #08C25E;
+    margin: 0 5px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.copyright p:hover{
+    color: #077038;
+}
+
+.scrollUpCon{
+    font-size: 40px;
+    color: #08C25E;
+    cursor: pointer;
+    position: relative;
+    left: 120px;
+}
+
+
+/*****RESPONSIVENESS******/
+
+@media screen and (min-width: 280px) and (max-width: 568px){
+    /* small phones size */
+    .container1{
+        width: 100%;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .container2{
+        width: 88%;
+        height: 10svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 1px solid grey;
+    }
+
+    .navBarSections{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .logoText{
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .title3{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 568px) and (max-width: 1024px){
+    /* big phones size */
+    .container1{
+        width: 100%;
+        min-height: 56vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container2{
+        width: 90%;
+        height: 10dvh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 1px solid grey;
+    }
+
+    .navBarSections{
+        width: 80%;
+        height: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 35%;
+    }
+
+    .logoText{
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .title3{
+        display: none;
+    }
+    
+}

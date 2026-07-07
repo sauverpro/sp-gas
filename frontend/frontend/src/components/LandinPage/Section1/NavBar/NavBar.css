@@ -1,0 +1,435 @@
+.NavBarContent{
+    height: 15vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar{
+    width: 91%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 55px;
+    width: 55px;
+}
+
+.logo h1{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-menu{
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.nav-item a{ 
+    color: #000000;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: ease-in-out 0.6s;
+    cursor: pointer;
+}
+
+.nav-item a:hover{
+    color: #08C25E;
+    padding-left: 5px;
+    border-left: 3px solid #08C25E;
+}
+
+.nav-item .active{
+    color: #08C25E;
+    padding-left: 5px;
+    border-left: 3px solid #08C25E;
+}
+
+.loginButton{
+    position: relative;
+    top: 8px;
+    right: 15px;
+    width: 150px;
+    height: 6vh;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid #08C25E;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    color: #08C25E;
+}
+
+.navBarModel{
+    min-height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 15vh;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.ModalNavBarContent{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ModalLinkList{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.ModalLinkList li{
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ModalLinkList li a{
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.modalLogo .logoImage{
+    height: 120px;
+    width: 120px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.profile_container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #08C25E;
+    padding: 5px;
+}
+
+.usernames{
+    padding-left: 5px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.editProfile{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-height: auto;
+    position: absolute;
+    top: 120%;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px 1px #00000048;
+    border-radius: 5px;
+}
+
+.PersonalProfiles{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  width: 90%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0000004d;
+  padding-top: 10px;
+}
+
+.editList{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 100%;
+  padding-left: 20px;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.list1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.icons{
+  font-size: 16px;
+  color: #00000094;
+}
+
+.list11{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.profileIcons{
+  font-size: 35px;
+  color: #0000004d;
+}
+
+.logoutButton{
+    font-size: 16px;
+    font-weight: normal;
+    color: #00000080;
+    margin: 6px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.EditProfile_Container, .overlay{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .EditProfile_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .overlay {
+    background: rgba(49, 49, 49, 0.596);
+  }
+
+  .EditProfileForm {
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-height: 50vh;
+    overflow-y: scroll;
+    width: 30%;
+    z-index: 8;
+    position: relative;
+    right: 100px;
+  }
+  
+  .EditProfileForm::-webkit-scrollbar{
+    display: none;
+  }
+
+  .profileForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .profileImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profileImage h3{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .profileImage h6{
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+  }
+
+  .imageforProfile{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid#08C25E;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #08C25E;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    cursor: pointer;
+  }
+  
+  .changeProfileName{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .changeProfileName input{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid #00000042;
+    border-radius: 5px;
+    outline-color: #08C25E;
+    outline-style:hidden;
+    outline-width: 1px;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  .edit{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+@media screen and (min-width: 280px) and (max-width: 936px){
+    .hamburger{
+        display: block;
+        background-color: #000000ab;
+        padding: 8px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .loginButton{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        width: 150px;
+        height: 6vh;
+        font-size: 16px;
+        border-radius: 40px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .editProfile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 120%;
+        background-color: #FFFFFF;
+        padding: 10px;
+        margin-right: 100px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        justify-content:center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    .EditProfileForm {
+        line-height: 1.4;
+        background: #f1f1f1;
+        padding: 14px 28px;
+        border-radius: 3px;
+        max-height: 50vh;
+        overflow-y: scroll;
+        width: 95%;
+        z-index: 8;
+        position: relative;
+        right: 0px;
+      }
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;1,9..40,200&family=Open+Sans:wght@300&family=Quicksand:wght@300&display=swap');
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cardContainer{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardContainer h1{
+   font-size: 21px;
+   font-weight: 500; 
+}
+.cardContainer p {
+    font-weight: 700;
+    font-size: 21px;  
+    margin-left: 35px;
+}
+
+.cardCont{
+    /* background-color: yellow; */
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+}
+.boxCont{
+        /* background-color: green; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+
+@media screen and (max-width : 375px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardContainer{
+        width: 260px;
+    }
+}
+@media screen and (min-width : 375px) and (max-width: 475px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardContainer{
+        width: 290px;
+    }
+    .cardCont{
+        width: 50rem!important;
+        display: flex;
+        flex-direction: column;
+    }
+    .boxCont{
+        /* background-color: blueviolet; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .adminChart{
+        width: 100%;
+    }
+    .cardContCard{
+        overflow-x: scroll;
+    }
+    
+}
+
+@media screen and (min-width : 475px) and (max-width: 675px){
+    .container{
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        gap: 1px;
+    }
+    .cardContainer{
+       width: 36%;
+    }
+}
+
+@media screen and (min-width : 675px) and (max-width: 875px){
+    .container{
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        gap: 1px;
+    }
+    .cardContainer{
+       width: 40%;
+    }
+}
