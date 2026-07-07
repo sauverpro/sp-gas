@@ -1,0 +1,76 @@
+.icon{
+    color:  #08C25E;;
+}
+.headcontainer{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+.returnButton{
+    display: none!important;
+}
+.retButton{
+    background-color: #08C25E;
+    border-radius: 50%;
+    display: flex!important;
+}
+.returnArrow{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+}
+.titleCon{
+    /* background-color: grey; */
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px
+}
+.icon{
+    width: 20%;
+    height: 5%;
+}
+
+
+@media screen and (max-width : 375px){
+
+    .returnButton{
+        display: flex!important;
+        align-items: center!important;
+    }
+   
+    .titleCon{
+        /* background-color: grey; */
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px
+    }
+    .icon{
+        width: 20%;
+        height: 5%;
+    }
+} 
+
+@media screen and  (max-width : 744px){
+
+    .returnButton{
+        display: flex!important;
+        align-items: center!important;
+    }
+    .titleCon{
+        /* background-color: grey; */
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px
+    }
+  
+}

@@ -1,0 +1,301 @@
+.signUp_Content{
+    display: grid;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.signUp_main_contents{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpForm_Container{
+    width: 35%;
+    height: 100vh;
+}
+
+.signUpForm{
+    display: grid;
+    width: 100%;
+    min-height: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #9493934b;
+}
+
+.SignUpTitle{
+    display: grid;
+}
+
+.SignUpTitle h1{
+    font-size: 25px;
+    font-weight: bold;
+    height: 6vh;
+    font-style: bold;
+    color: #000000;
+}
+
+.SignUpTitle p{
+    font-size: 14px;
+    color: #0000008c;
+}
+
+.linkTologin{
+    font-size: 14px;
+    color: #08C25E;
+    font-weight: bold;
+}
+
+.SignUpDatas_container{
+    height: 40vh;
+    width: 84%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+}
+
+#SignUpName{
+    height: 10px;
+    width: 100%;
+    outline: none;
+    padding: 18px;
+    font-size: 13px;
+    border-radius: 5PX;
+    border: 1px solid #00000062;
+}
+
+.SignUpemailAddress{
+    height: 10px;
+    width: 100%;
+    outline: none;
+    padding: 18px;
+    font-size: 13px;
+    border-radius: 5PX;
+    border: 1px solid #00000062;
+}
+
+#signUpPassword{
+    height: 10px;
+    width: 100%;
+    outline: none;
+    padding: 18px;
+    font-size: 13px;
+    border-radius: 5PX;
+    border: 1px solid #00000062;
+}
+
+#RetypePassword{
+    height: 10px;
+    width: 100%;
+    outline: none;
+    padding: 18px;
+    font-size: 13px;
+    border-radius: 5PX;
+    border: 1px solid #00000062;
+}
+
+.SignUpBtn{
+    width: 84%;
+    height: 7vh;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #08C25E;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden;  
+}
+
+
+.SignUpBtn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid #08C25E;
+}
+
+.loader{
+  border: 2px solid #08C25E;
+  background-color: white;
+  color: #08C25E;
+  width: 100%;
+  height: 7vh;
+  border: 1px solid #08C25E;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+
+.loader:hover{
+  color: #08C25E;
+}
+
+  .AnotherSignUpOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    margin-top: 20px;
+  }
+
+  .AnotherSignUpOptions h4{
+    color: #00000065;
+    font-size: 15px;
+  }
+
+  .googleAndFb{
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .google{
+    width: 45%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid #0000002f;
+    border-radius: 5px;
+  }
+
+  .Fb{
+    width: 45%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid #0000002f;
+    border-radius: 5px;
+  }
+
+  .google h4{
+    padding-left: 10px;
+    font-size: 16px;
+    color: #ff0000a2;
+  }
+
+  .Fb h4{
+    padding-left: 10px;
+    color: #0000ff9a;
+    font-size: 16px;
+  }
+
+  .googleIcon{
+    font-size: 30px;
+  }
+
+  .facebookicon{
+    font-size: 30px;
+    color: #0000ff9d;
+  }
+
+.SignUpImage_Container{
+    width: 40%;
+    height: 70vh;
+}
+
+.SignUpImage{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    margin-left: 30px;
+}
+
+.bottombackground{
+    height: 20vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+
+
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+
+.signUp_main_contents{
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpForm_Container{
+  width: 100%;
+  height: auto;
+}
+
+.signUpForm{
+  display: grid;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 5%;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 12px #0000004b;
+  bottom: 30px;
+  top: 40px;
+}
+
+.SignUpImage_Container{
+  display: none;
+}
+
+.bottombackground{
+  display: none;
+}
+
+
+  
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+.signUp_main_contents{
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpForm_Container{
+  width: 100%;
+  height: auto;
+}
+
+.signUpForm{
+  display: grid;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 5%;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 12px #0000004b;
+  bottom: 30px;
+  top: 80px;
+}
+
+.SignUpImage_Container{
+  display: none;
+}
+
+.bottombackground{
+  display: none;
+}
+
+}

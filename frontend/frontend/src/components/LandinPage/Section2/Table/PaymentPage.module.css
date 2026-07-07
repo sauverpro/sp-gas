@@ -1,0 +1,856 @@
+.PaymentContent{
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 150px;
+}
+
+.PaymentDetails{
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 1px 4px #00000049;
+    border-radius: 5px;
+}
+
+.GasOverView{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.GasOverView img{
+    height: 20vh;
+    width: auto;
+}
+
+.GasDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 50%;
+}
+
+.GasDetails h3{
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.GasDetails ul{
+    display: grid;
+    height: auto;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.listOfDetails{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.listOfDetails label{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.listOfDetails h4{
+    font-size: 15px;
+    margin-left: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.AdditionalAddons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.AdditionalAddons h3{
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.AddonsList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.AddonsList li{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.load{
+    margin: 20px;
+}
+
+.AddonsList li .span1{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.AddonsList li .span2{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.AddonsList li h4{
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+    text-align: start;
+    width: 35%;
+}
+
+.AddonsList li input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    accent-color: #08C25E;
+    border-radius: none;
+    mix-blend-mode: multiply;
+}
+
+.AddonsList li input[type="number"]{
+    width: 60px;
+    height: 20px;
+    outline: none;
+    border: 1px solid #00000044;
+    text-align: center;
+    font-size: 14px;
+}
+
+.AddonsList li input[type="number"]::placeholder{
+    text-align: center;
+    font-size: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.delivery{
+    height: 30px;
+    width: 50px;
+    margin-top: -3px;
+  
+    padding-left: 8px;
+    border: none;
+    color: black;
+    background-color: #FFF61A;
+    font-weight: 900;
+}
+
+.PaymentForms{
+    height: auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title{
+    height: auto;
+    width: 100%;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.ChoosePaymentMethodForm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #08C25E;
+    padding: 5px 5px 5px 5px;
+    margin-top: 30px;
+}
+
+.PaymentMethod{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: first baseline;
+}
+
+.PaymentMethodLabel{
+    font-size: 16px;
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.choose{
+    background-color: #FFF61A;
+    width: 60%;
+    height: 5vh;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.DeliveryChoice{
+    background-color: #FFF61A;
+    width: 60%;
+    height: 5vh;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.displayDelivaryAmount{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 35%;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.choices{
+    height: 65%;
+}
+
+.displayDelivaryAmount label{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.displayDelivaryAmount h4{
+    font-size: 16px;
+    color: #FFF61A;
+    font-weight: bold;
+}
+
+.TotalAmount{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TotalAmount img{
+    max-width: 80%;
+    height: 15vh;
+}
+
+.totalPayment{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.totalPayment label{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.totalPayment h4{
+    color: #FFF61A;
+    font-size: 16px;
+}
+
+.PayForm{
+    width: 100%;
+    min-height: auto;
+    margin-top: 20px;
+    box-shadow: 0 1px 4px #00000049;
+    border-radius: 3px;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.numberOfItems{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    margin-top: 8px;
+}
+.numberOfItems input{
+    width: 42px;
+    height: 4vh;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    background-color: #FFFFFF;
+    border: 1px solid #00000050;
+
+}
+
+.PhoneAndLocations{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.PhoneNumberToCall{
+    width: 88%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.CurrentLocation{
+    width: 88%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.PhoneAndLocations input{
+    height: 5vh;
+    width: 56%;
+    outline: none;
+    padding-left: 8px;
+    border: 1px solid #00000069;
+    color: #000000;
+    font-size: 14px;
+}
+
+.PhoneNumber{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.Phone{
+    height: 100%;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Phone label{
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+    text-align: start;
+    width: 80%;
+}
+
+.Phone input{
+    height: 5vh;
+    width: 80%;
+    font-size: 14px;
+    border: 1px solid #00000063;
+    outline: none;
+    margin-top: 5px;
+    padding-left: 15px;
+    border-radius: 1px;
+}
+
+.paymentBTN{
+    background-color: #08C25E;
+    width: 80px;
+    height: 5vh;
+    margin-right: 30px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/***************RESPONSIVENESS****************/
+@media screen and (min-width: 280px) and (max-width: 678px){
+    /* small phones size */
+    .topSpace{
+        display: none;
+    }
+
+    .PaymentForms{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .PaymentDetails{
+        width: 90%;
+        height: auto;
+        padding: 3px 3px 3px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 1px 4px #00000049;
+        border-radius: 5px;
+    }
+
+    .GasOverView{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .GasDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .AddonsList li{
+        width: 93%;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        background-color: #c9cfcc9f;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .AddonsList li .span1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .AddonsList li .span2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .AddonsList li .span1 h4{
+        font-size: 16px;
+        width: 50%;
+        text-align: right;
+    }
+
+    .AddonsList li .span1 h4:nth-child(1){
+        font-size: 16px;
+        width: 50%;
+        text-align: left;
+    }
+
+    .AddonsList li input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+        outline: none;
+        accent-color: #08C25E;
+        border-radius: none;
+        mix-blend-mode: multiply;
+    }
+    
+    .AddonsList li input[type="number"]{
+        width: 80px;
+        height: 25px;
+        outline: none;
+        border: 1px solid #00000044;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .ChoosePaymentMethodForm{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #08C25E;
+        padding: 30px 30px 30px 30px;
+        margin-top: 30px;
+    }
+
+    .PaymentMethod{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: first baseline;
+    }
+    
+    .PaymentMethodLabel{
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .choose{
+        background-color: #FFF61A;
+        width: 100%;
+        height: 5vh;
+        font-size: 14px;
+        color: #000000;
+        margin-top: 10px;
+        font-weight: normal;
+        outline: none;
+        border: none;
+        padding-left: 0px;
+        cursor: pointer;
+    }
+    
+    .DeliveryChoice{
+        background-color: #FFF61A;
+        width: 100%;
+        height: 5vh;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #000000;
+        font-weight: normal;
+        outline: none;
+        border: none;
+        padding-left: 0px;
+        cursor: pointer;
+    }
+    
+    .displayDelivaryAmount{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 35%;
+        margin-top: 12px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .choices{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .displayDelivaryAmount label{
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+    
+    .displayDelivaryAmount h4{
+        font-size: 16px;
+        color: #FFF61A;
+        font-weight: bold;
+    }
+    
+    .TotalAmount{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .TotalAmount img{
+        max-width: 80%;
+        max-height: 80%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .totalPayment{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .PayForm{
+        width: 90%;
+        min-height: auto;
+        margin-top: 20px;
+        box-shadow: 0 1px 4px #00000049;
+        border-radius: 3px;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 28px;
+        padding-right: 28px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ItemsAndBottle{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .setNumberOfItem{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .PhoneAndLocations{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .PhoneNumberToCall{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    
+    .CurrentLocation{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    
+    .PhoneAndLocations input{
+        height: 5vh;
+        width: 100%;
+        outline: none;
+        padding-left: 8px;
+        border: 1px solid #00000069;
+        color: #000000;
+        font-size: 14px;
+    }
+    
+    .PhoneNumber{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    .Phone{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .Phone label{
+        font-size: 16px;
+        font-weight: normal;
+        color: #000000;
+        text-align: start;
+        width: 100%;
+    }
+    
+    .Phone input{
+        height: 5vh;
+        width: 100%;
+        font-size: 14px;
+        border: 1px solid #00000063;
+        outline: none;
+        margin-top: 5px;
+        padding-left: 15px;
+        border-radius: 1px;
+    }
+
+    .PayForm label{
+        font-size: 18px;
+    }
+    
+    .paymentBTN{
+        background-color: #08C25E;
+        width: 100%;
+        height: 5vh;
+        margin-right: 0px;
+        outline: none;
+        border: none;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1024px){
+    /* tablet size */
+    .topSpace{
+        display: none;
+    }
+
+    .PaymentForms{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .PaymentDetails{
+        width: 90%;
+        height: auto;
+        padding: 3px 3px 3px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 1px 4px #00000049;
+        border-radius: 5px;
+    }
+
+    .ChoosePaymentMethodForm{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #08C25E;
+        padding: 5px 5px 5px 5px;
+        margin-top: 30px;
+    }
+
+    .PayForm{
+        width: 90%;
+        min-height: auto;
+        margin-top: 20px;
+        box-shadow: 0 1px 4px #00000049;
+        border-radius: 3px;
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .paymentBTN{
+        background-color: #08C25E;
+        width: 20%;
+        height: 5vh;
+        margin-right: 45px;
+        outline: none;
+        border: none;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 25px;
+        font-size: 26px;
+    }
+
+
+    .PayForm label{
+        font-size: 22px;
+    }
+
+    .ChoosePaymentMethodForm label{
+        font-size: 20px;
+    }
+
+    .ChoosePaymentMethodForm h4{
+        font-size: 20px;
+    }
+}
