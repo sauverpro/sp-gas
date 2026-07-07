@@ -1,0 +1,54 @@
+.stockPagination{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+  .CircleLoader{
+    size: 5px!important;
+    margin: 0 auto;
+   }
+  @media screen and (max-width:375px) {
+    
+    .CircleLoader{
+      margin-left: -20px !important;
+      margin-right: 15px !important;
+      margin-top: 20px;
+      size: 5px!important;
+     }
+  }
+  @media screen and  (max-width : 744px){
+
+    .CircleLoader{
+        margin-left: -20px !important;
+        margin-right: 15px !important;
+        margin-top: 20px;
+        size: 5px!important;
+       }
+}

@@ -1,0 +1,306 @@
+.AboutContent{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4FDFB;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header{
+    height: 40vh;
+    width: 100%;
+}
+
+.header h1{
+    height: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    text-align:center;
+    color: #000000;
+    margin-top: 50px;
+}
+
+.header h1 small{
+    height: 50%;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: #00000086;
+}
+
+.aboutCardContainer{
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    height: 65vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card:nth-child(1){
+    background-color: #007bff5e;
+}
+
+.card:nth-child(1) .cardIcon{
+    background-color: #0050AA;
+}
+
+.card:nth-child(2){
+    background-color: #fff71a6c;
+}
+
+.card:nth-child(2) .cardIcon{
+    background-color: #d4ce10e7;
+}
+
+.card:nth-child(3){
+    background-color: #08c25f69;
+}
+
+.card:nth-child(3) .cardIcon{
+    background-color: #08C25E;
+}
+
+.cardHeader{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardIcon{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 100%;
+    color: #FFFFFF;
+}
+
+.cardHeader h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.descriptions{
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/************RESPONSIVENESS****************/
+@media screen and (min-width: 280px) and (max-width: 414px){
+    /* small phones size */
+    .AboutContent{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #F4FDFB;
+    }
+
+    .header{
+        height: auto;
+        width: 100%;
+        display: grid;
+    }
+
+    .header h1{
+        height: 0%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+    }
+
+    .header h1 small{
+        height: 0%;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: center;
+        color: #000000;
+    }
+    .aboutCardContainer{
+        height: 80%;
+        width: 100%;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .cardHeader h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .descriptions{
+        height: 50%;
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 768px){
+    /* big phones size */
+    .AboutContent{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #F4FDFB;
+    }
+
+    .header{
+        height: 20%;
+        width: 100%;
+        display: grid;
+    }
+
+    .header h1{
+        height: 0%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+    }
+
+    .header h1 small{
+        height: 0%;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: center;
+        color: #000000;
+    }
+
+    .aboutCardContainer{
+        height: 80%;
+        width: 100%;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .cardHeader h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .descriptions{
+        height: 50%;
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* tablet size */
+    .AboutContent{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #F4FDFB;
+    }
+
+    .header{
+        height: 30%;
+        width: 100%;
+        display: grid;
+    }
+
+
+    .header h1{
+        height: 50%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+    }
+
+    .header h1 small{
+        height: 50%;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: center;
+        color: #000000;
+    }
+
+    .aboutCardContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .cardHeader h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .descriptions{
+        height: 50%;
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
