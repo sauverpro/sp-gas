@@ -1,0 +1,174 @@
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container1{
+    max-width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.h1{
+    font-size: 60px;
+    color: #000000;
+    font-weight: normal;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.ibisobanuro{
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+.descrButtons{
+    width: 50%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.button{
+    width: 12vw;
+    height: 10vh;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.container2{
+    max-width: 40%;
+    height: 60%;
+}
+.appPhoto{
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+}
+@media screen and (min-width: 280px) and (max-width: 600px) {
+    .container1{
+        max-width: 100%;
+        height: 120%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .container2{
+        display: none;
+    }
+
+    .h1{
+        font-size: 50px;
+        color: #000000;
+        font-weight: normal;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ibisobanuro{
+        font-size: 18px;
+        margin-top: 60px;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .descrButtons{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .button{
+        width: 50%;
+        height: 8vh;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .container{
+        height: 50vh;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container1{
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .container2{
+        display: none;
+    }
+
+    .h1{
+        font-size: 60px;
+        color: #000000;
+        font-weight: normal;
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .ibisobanuro{
+        width: 100%;
+        font-size: 30px;
+        margin-top: 0px;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .descrButtons{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+    .button{
+        width: 40%;
+        height: 8vh;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+}
