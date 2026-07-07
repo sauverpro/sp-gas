@@ -1,0 +1,296 @@
+/**********************StationManagerAssignedOrder***********************************/
+.downn{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+  }
+.paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+.title{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 19px;
+}
+.headButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.retButton{
+    /* background-color: #FFFFFF; */
+    border-radius: 50%;
+    display: none!important;
+}
+.returnArrow{
+    width: 30px;
+    height: 30px;
+    color: #08C25E;
+    margin-bottom: 16px;
+}
+.container{
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 40px;  
+}
+
+
+.left{
+    margin-top: 20px;
+}
+
+.leftTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93;
+    margin-bottom: 5px;
+}
+
+.leftName{
+    font-size: 15px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.rightTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.rightTitlee{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 80px; 
+}
+
+
+.rightTithle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+
+
+.label{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.rightContent{
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+
+
+.rightContentt{
+    border-top: 2px solid #8E8E93;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+
+
+.pice{
+    border: 2px solid #8E8E93;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+}
+
+.pay{
+    background-color: green;
+    border: 1px solid #8E8E93;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+  }
+  
+  .notPay{
+    background-color: red;
+    border: 1px solid #8E8E93;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+  }
+
+.payment{
+    margin-top: 30px;
+}
+
+.status{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.status p{
+    color: black;
+    font-weight: 900;
+    background: white;
+    padding: 3px 15px;
+    border-radius: 5px;
+    border: 1px solid#08C25E;
+}
+
+.approveButton{
+    color: White;
+    font-weight: 800;
+    background:#08C25E;
+    padding: 3px 15px !important;
+    border-radius: 5px;
+    width: 80% !important;
+}
+.method{
+    border: 2px solid #08C25E !important;
+    background-color: #fff !important;
+    color: #08C25E !important;
+}
+.approveButton{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.approveCon{
+    width: 15%;
+    height: 1%;
+}
+.CircleLoader{
+    size: 5px!important;
+    margin: 0 auto;
+   }
+
+@media screen and  (min-width: 1024px){
+    .retButton{
+        border-radius: 50%;
+        display: none!important;
+    }
+};
+
+
+@media screen and (min-width : 375px){
+    .main{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column!important;
+        align-items: center;
+        padding-right: 0rem!important;
+        gap: 50px!important; 
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 510;
+        color: black;
+    }
+    .approveButton{
+        width: 50%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .rightContent{
+        gap: 40px;
+    }
+    .rightTitlee{
+        gap: 55px;
+    }
+    .retButton{
+        border-radius: 50%;
+        display: flex!important;
+    }
+
+} 
+
+@media screen and  (min-width : 744px){
+    .main{
+        /* background-color: yellowgreen; */
+        width: 100%;
+        display: flex;
+        flex-direction: row!important;
+        justify-content: center; 
+        padding-right: 20rem!important;
+        gap: 50px!important;   
+    }
+    .left{
+       margin-left: 30%;
+    }
+    .approveButton{
+        width: 20%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

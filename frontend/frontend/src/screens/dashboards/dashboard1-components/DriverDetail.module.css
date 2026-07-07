@@ -1,0 +1,177 @@
+.title{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    
+}
+
+.photoHolder{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(146, 134, 134, 0.9);
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+}
+
+.updatePhoto{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.modalc{
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    top: 40%;
+    right: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp{
+    width: 58%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sv{
+    background-color:#08C25E;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rgtcontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.link{
+    text-decoration: none;
+}
+
+.btnedit{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    
+}
+.btndelete{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.btnicon{
+    font-size: 15px;
+}
+.retButton{
+    display: none;
+    margin-right: 10px;
+}
+.returnArrow{
+  background-color: #08C25E;
+  border-radius: 50%;
+  color: #FFFFFF;
+  width: 25px;
+  height: 25px;
+}
+/* -=====                Media Querries                   ====- */
+
+@media screen and (max-width : 375px){
+    .main{
+        flex-direction: column;
+    }
+    .retButton{
+        display: flex;
+        margin-right: 10px;
+      }
+
+      .modalc{
+        z-index: 1;
+        top: 28%;
+        right: 38%;
+       
+    }  
+} 
+
+@media screen and  (max-width : 744px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .left{
+       margin-left: 30%;
+    }
+
+    .photoHolder{
+        margin-left: -35%;
+    }
+    .retButton{
+        display: flex;
+        margin-right: 10px;
+      }
+      
+      .cont{
+        width: 100%;
+      }
+      .modalc{
+        z-index: 1;
+        top: 28%;
+        right: 38%;
+       
+    } 
+}

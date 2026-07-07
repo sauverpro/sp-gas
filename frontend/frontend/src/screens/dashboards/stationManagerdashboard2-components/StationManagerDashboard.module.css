@@ -1,0 +1,183 @@
+/***************Sales Over Vieuw****************/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;1,9..40,200&family=Open+Sans:wght@300&family=Quicksand:wght@300&display=swap');
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cardContainer{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contDiv{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contdes{
+    /* background-color: #C98209; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.cardContainer h1{
+    /* background-color: green; */
+    width: 60%;
+   font-size: 20px;
+   font-weight: 500; 
+}
+.cardContainer p {
+    font-weight: 700;
+    font-size: 30px;  
+    margin-left: 35px;
+}
+.conStatus1, .conStatus2, .conStatus3, .conStatus4{
+    width: 40%;
+    height: 50%;
+}
+.conStatus1{
+    color: #1175ae;
+}
+.conStatus2{
+    color: #C98209;
+}
+.conStatus3{
+    color: #0FA958;
+}
+.conStatus4{
+    color: #FF0000;
+}
+.headTitle1{
+    color: #1175AE;
+}
+.headTitle2{
+    color: #C98209;
+}
+.headTitle3{
+    color: #0FA958;
+}
+.headTitle4{
+    color: #FF0000;
+}
+.newOrderButton{
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #0FA958;
+    color: #FFFFFF;
+    width: 30%;
+    height: 30%;
+    margin-top: 5px;
+    margin-left: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.newOrderButton:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+
+/***************Daily Activities****************/
+
+
+
+/***************Product Performance*************/
+
+
+
+/***************Responsiveness*****************/
+
+@media screen and (max-width : 375px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardContainer{
+        width: 260px;
+    }
+    
+}
+@media screen and (min-width : 375px) and (max-width: 475px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardContainer{
+        width: 290px;
+    }
+    .newOrderButton{
+        text-transform: capitalize;
+        font-weight: bold;
+        background-color: #0FA958;
+        color: #FFFFFF;
+        width: 30%;
+        height: 30%;
+        margin-top: 5px;
+        margin-left: 80px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width : 475px) and (max-width: 675px){
+    .container{
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        gap: 1px;
+    }
+    .cardContainer{
+       width: 36%;
+    }
+
+    .newOrderButton{
+        text-transform: capitalize;
+        font-weight: bold;
+        background-color: #0FA958;
+        color: #FFFFFF;
+        width: 30%;
+        height: 30%;
+        margin-top: 5px;
+        margin-left: 80px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width : 675px) and (max-width: 875px){
+    .container{
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        gap: 1px;
+    }
+    .cardContainer{
+       width: 40%;
+    }
+    .newOrderButton{
+        text-transform: capitalize;
+        font-weight: bold;
+        background-color: #0FA958;
+        color: #FFFFFF;
+        width: 30%;
+        height: 30%;
+        margin-top: 5px;
+        margin-left: 80px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+}
