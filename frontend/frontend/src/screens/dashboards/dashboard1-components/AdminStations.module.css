@@ -1,0 +1,327 @@
+.downn{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .paginationButtons{
+    height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .paginationButtons a {
+    padding: 7px;
+    margin: 8px;
+    border-radius: 15%;
+    border: 1px solid #08C25E;
+    color: #08C25E;
+    cursor: pointer;
+  }
+  
+  .paginationButtons a:hover{
+    color: white;
+    background-color:#08C25E;
+  }
+  .activePage a{
+    color: white;
+    background-color:#08C25E;
+  }
+
+.eye{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.icon{
+    color: #08C25E;
+    font-size: 20px;
+}
+
+.stationform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CircleLoader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 260px;
+    margin-top: 20px;
+   }
+   
+
+
+
+/* =======================      Details    ======================= */
+
+.title{
+    font-size: 18px;
+    font-weight: 510;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+.left{
+    margin-top: 20px;
+}
+
+.leftTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93;
+    margin-bottom: 5px;
+}
+
+.leftName{
+    font-size: 15px;
+    font-weight: 510;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* .rightTitleContainer{
+    
+} */
+
+.rightTitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8E8E93; 
+    text-align: center;
+    margin-bottom: 0px;
+}
+.rightone{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    /* gap: 50px; */
+}
+.rightone button{
+    border: none;
+    outline: none;
+    background-color: #08C25E;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 5px; 
+}
+.rightone button:hover{
+    background-color: #26d477;
+    cursor: pointer;
+}
+.rightContent{
+    border-top: 2px solid #8E8E93;
+    border-bottom: 2px solid #8E8E93;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    flex-direction: row;
+    margin-top: -2px;
+    padding: 5px 0px;
+}
+
+.rightBottle{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.rightBottled{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pi{
+    color:black;
+    font-weight: 700;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.link{
+    text-decoration: none;
+}
+
+.btnedit{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    
+}
+.btndelete{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.btnicon{
+    font-size: 15px;
+}
+
+.retButton{
+    display: none!important;
+    margin-right: 10px;
+}
+.returnArrow{
+    background-color: #08C25E;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+/***************Add stock Card****************/
+
+.middle{
+  
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+
+}
+.middleCard{
+    background-color: #FFFFFF;
+    width: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.middleCard span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+
+}
+.middleCard p{
+    margin-top: 5px;
+}
+.closeCard{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end!important;
+    border-bottom: none!important;
+    margin-bottom: 10px!important;
+}
+.closeIcon{
+    color: #26d477;
+    width: 30%;
+    height: 50%;
+}
+.closeIcon:hover{
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 375px){
+    .main{
+        flex-direction: column;
+    }
+    .CircleLoader{
+        margin-left: -20px !important;
+        margin-right: 15px !important;
+        margin-top: 20px;
+        size: 5px!important;
+       }
+    .retButton{
+        display: flex!important;
+        margin-right: 10px;
+    }
+    .title{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .titleContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+} 
+
+@media screen and  (max-width : 744px){
+    .middle{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        right: 20%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+    .left{
+       margin-left: 30%;
+    }
+    .retButton{
+        display: flex!important;
+        margin-right: 10px;
+    }
+
+
+    .CircleLoader{
+        margin-left: -20px !important;
+        margin-right: 15px !important;
+        margin-top: 20px;
+        size: 5px!important;
+       }
+       .title{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .titleContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
